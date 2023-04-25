@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #131011;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.atm.projectatm.MainController">
+   <children>
+         <HBox layoutX="27.0" layoutY="162.0" prefHeight="183.0" prefWidth="328.0" style="-fx-spacing: 60;">
+            <children>
+               <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 20;">
+                  <children>
+                  <Button fx:id="deposit_bt" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #FFC107;" text="Deposit" />
+                  <Button fx:id="withdraw_bt" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #FFC107;" text="Withdraw" />
+                  <Button fx:id="transfer_bt" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #FFC107;" text="Transfer" />
+                  </children>
+               </VBox>
+               <VBox prefHeight="183.0" prefWidth="168.0" style="-fx-spacing: 20;">
+                  <children>
+                  <TextField fx:id="deposit_tf" promptText="Deposit" />
+                  <TextField fx:id="withdraw_tf" prefHeight="25.0" prefWidth="125.0" promptText="Withdraw" />
+                  <TextField fx:id="transfer_tf" promptText="Amount" />
+                     <TextField fx:id="transferId_tf" promptText="Reviever Id" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <HBox layoutX="27.0" layoutY="14.0" prefHeight="103.0" prefWidth="296.0">
+            <children>
+               <VBox prefHeight="103.0" prefWidth="118.0" style="-fx-spacing: 20;">
+                  <children>
+                     <Label text="Log in as:" textFill="#ffc107">
+                        <font>
+                           <Font size="15.0" />
+                        </font>
+                     </Label>
+                     <Label prefHeight="21.0" prefWidth="122.0" text="Account number:" textFill="#ffc107">
+                        <font>
+                           <Font size="15.0" />
+                        </font>
+                     </Label>
+                     <Label text="Balance:" textFill="#ffc107">
+                        <font>
+                           <Font size="15.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+               <VBox prefHeight="103.0" prefWidth="181.0" style="-fx-spacing: 20;">
+                  <children>
+                     <Label fx:id="userInfo_lbl" prefHeight="21.0" prefWidth="185.0" text="user info" textFill="#ffc107">
+                        <font>
+                           <Font size="15.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="accountNumber_lbl" prefHeight="21.0" prefWidth="184.0" text="account nb" textFill="#ffc107">
+                        <font>
+                           <Font size="15.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="balance_lbl" prefHeight="21.0" prefWidth="207.0" text="balance" textFill="#ffc107">
+                        <font>
+                           <Font size="15.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <Button fx:id="delete_bt" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #FFC107;" text="Delete" />
+         <VBox layoutX="408.0" layoutY="162.0" prefHeight="200.0" prefWidth="151.0" style="-fx-spacing: 20;">
+            <children>
+            <TextField fx:id="oldPassword_tf" promptText="Old password" />
+            <TextField fx:id="newPassword1_tf" promptText="New password" />
+            <TextField fx:id="newPassword2_tf" promptText="Confirm new password" />
+            <Button fx:id="changePassword_bt" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #FFC107;" text="Change password" />
+            </children>
+         </VBox>
+      <Button fx:id="logout_bt" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #FFC107;" text="Log out" />
+   </children>
+</AnchorPane>
